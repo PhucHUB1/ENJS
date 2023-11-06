@@ -1,19 +1,25 @@
 import mongoose from 'mongoose';
 
-const product_schema = new mongoose.Schema({
-  full_name: {
+ const product_schema = new mongoose.Schema({
+  product_code: {
     type: String,
   },
-  email: {
+  product_name: {
     type: String,
   },
 
-  password: {
+  product_date: {
     type: String,
   },
-  avatar: {
-    data: String,
-    contentType: String
+  product_origin_price: {
+    type: Number,
+  },
+  quantity: {
+    type: Number,
+  },
+
+  product_store_code: {
+    type: String,
   },
 });
 
