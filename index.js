@@ -20,7 +20,7 @@ app.use(
       saveUninitialized: true,
       secret: process.env.SESSION_SECRET,
       cookie: {
-        maxAge: 3600000, // milisecond
+        maxAge: 3600000,
         secure: false
       }
     })
